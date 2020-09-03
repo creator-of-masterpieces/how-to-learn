@@ -223,7 +223,56 @@
   line-height: 1.2;
   font-weight: 400;
 }
+
 .table__text:first-of-type {
   margin-bottom: 20px;
 }
 
+
+/*--------------------- СТИЛИЗУЮ FEIMAN -------------*/
+
+
+.feinman {
+  position: relative;
+
+  min-height: 790px;
+
+  background: #f2f2f2 url(../images/feynman.png) left bottom no-repeat;
+}
+
+.feinman__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feinman__title {
+  width: 648px;
+  margin: 0 0 70px 0;
+
+  text-align: center;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.feinman__subtitle {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+}
+
+.feinman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+
+  color: #000;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+}
