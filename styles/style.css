@@ -10,6 +10,7 @@
 }
 
 
+
 /* -----------------СТИЛИЗУЮ ШАПКУ------------------ */
 
 
@@ -21,15 +22,14 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .header__flex-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: -1;
-
-  margin-bottom: 100px;;
+  z-index: 0;
 }
 
 .logo_place_header {
@@ -73,7 +73,6 @@
   z-index: -1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   top: 64px;
@@ -87,11 +86,13 @@
 
 /*--------------------- СТИЛИЗУЮ DESCRIPTION -------------*/
 
+.description {
+  padding-top: 100px;
+}
+
 .content__flex-row {
   display: flex;
   justify-content: center;
-
-  margin-bottom: 100px;
 }
 
 .two-columns {
@@ -139,6 +140,10 @@
 /*--------------------- СТИЛИЗУЮ DIGITS -------------*/
 
 
+.digits {
+  padding: 100px 0;
+}
+
 .digits__title {
   margin: 0 auto 20px auto;
   text-align: center;
@@ -172,11 +177,10 @@
   flex-wrap: wrap;
 
   width: 1100px;
-  padding-top: 60px;
 }
 
 .digits__table {
-  margin: 0 auto 100px auto;
+  margin: 0 auto;
 }
 
 
@@ -188,7 +192,7 @@
 }
 
 .table__heading {
-  margin: 0 0 20px 0;
+  margin: 0;
 
   font-size: 24px;
   line-height: 1.15;
@@ -196,7 +200,7 @@
 }
 
 .table__text {
-  margin: 0;
+  margin: 20px 0 0 0;
 
   font-size: 18px;
   line-height: 1.2;
@@ -212,6 +216,7 @@
   position: relative;
 
   min-height: 790px;
+  padding-top: 100px;
 
   background: #f2f2f2 url(../images/feynman.png) left bottom no-repeat;
 }
@@ -267,9 +272,6 @@
   overflow: hidden;
 }
 
-.table_theme_dark {
-  padding-top: 80px;
-}
 
 .section-title_theme_dark {
   margin: 0 auto 20px auto;
@@ -396,7 +398,7 @@
 .footer__column-link_content_fb::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 7px;
   left: 0;
   width: 16px;
   height: 16px;
@@ -407,7 +409,7 @@
 .footer__column-link_content_vk::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 7px;
   left: 0;
   width: 16px;
   height: 16px;
@@ -418,10 +420,10 @@
 .footer__column-link_content_inst::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 7px;
   left: 0;
   width: 16px;
-  height: 15px;
+  height: 14px;
 
   background-image:url(..//images/instagram_color_white.svg);
 }
