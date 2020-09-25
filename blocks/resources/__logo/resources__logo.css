@@ -4,8 +4,8 @@
 	height: 38px;
 }
 
-.resources__logo:hover path,
-.resources__logo:focus path {
+.resources__logo:hover img,
+.resources__logo:focus img {
 	opacity: 0.5;
 	transition: opacity .5s;
 }
